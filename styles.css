@@ -402,6 +402,7 @@ border-left: solid 5px #ff5733;
     }
 }
 
+/* About Section */
 .about {
     display: flex;
     justify-content: center;
@@ -535,6 +536,12 @@ border-left: solid 5px #ff5733;
     }
     .about-text h2 span {
         font-size: 28px;
+    }
+    .about-text h3 span {
+        font-size: 25px;
+    }
+    .about-text h3 {
+        font-size: 15px;
     }
     .about-text p {
         font-size: 1rem;
