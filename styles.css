@@ -131,7 +131,7 @@ body {
         width: 250px;
         height: 100%;
         backdrop-filter: blur(10px);
-        background: linear-gradient(135deg, #ff5733, #33ff57, #5733ff);
+        background-color: #cccccccb;
         flex-direction: column;
         justify-content: center;
         transition: 0.3s;
@@ -541,7 +541,7 @@ border-left: solid 5px #ff5733;
         font-size: 25px;
     }
     .about-text h3 {
-        font-size: 15px;
+        font-size: 16px;
     }
     .about-text p {
         font-size: 1rem;
