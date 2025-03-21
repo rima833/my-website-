@@ -35,13 +35,13 @@ body {
 .logo :hover {
     color: #8B0000;
 }
-
 /* Navigation Menu */
 .menu {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 7px 0;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 .menu ul {
@@ -60,12 +60,31 @@ body {
     color: #0000cc;
     font-size: 18px;
     padding: 10px;
+    position: relative;
     transition: 0.3s;
+    animation: pulseColorChange 2s infinite;
 }
 
 .menu ul li a:hover,
 .menu ul li a.active {
-    color: #000033;
+    color: #ff5733;
+    animation: rotateMagic 1s infinite;
+}
+
+.menu ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #ff5733, #33ff57, #5733ff);
+    transition: width 0.3s ease-in-out;
+}
+
+.menu ul li a:hover::after,
+.menu ul li a.active::after {
+    width: 100%;
 }
 
 /* Mobile Menu Styles */
@@ -112,7 +131,7 @@ body {
         width: 250px;
         height: 100%;
         backdrop-filter: blur(10px);
-        background: #f4f4f4af;
+        background: linear-gradient(135deg, #ff5733, #33ff57, #5733ff);
         flex-direction: column;
         justify-content: center;
         transition: 0.3s;
