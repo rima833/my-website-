@@ -166,5 +166,8 @@ document.addEventListener("DOMContentLoaded", () => {
             link.addEventListener('click', () => {
             navLinks.forEach(nav => nav.classList.remove('active'));
             link.classList.add('active');
+            // Hide the menu when a link is clicked
+            menu.classList.remove('active');
+            menuToggle.classList.remove('open');
             });
         });
