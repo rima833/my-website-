@@ -150,12 +150,21 @@ document.addEventListener("DOMContentLoaded", () => {
             loop: true
         });
         const menuToggle = document.querySelector('.menu-toggle');
-    const menu = document.querySelector('.menu');
-    const menuIcon = document.querySelector('.menu-toggle span');
-    
-    menuToggle.addEventListener('click', () => {
-        menu.classList.toggle('active');
-        menuToggle.classList.toggle('open');
-    });
-    
-    
+        const menu = document.querySelector('.menu');
+        const menuIcon = document.querySelector('.menu-toggle span');
+        const navLinks = document.querySelectorAll('.menu li a');
+        
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+            menuToggle.classList.toggle('open');
+            document.querySelectorAll('.section').forEach(section => {
+            section.classList.add('active');
+            });
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+            navLinks.forEach(nav => nav.classList.remove('active'));
+            link.classList.add('active');
+            });
+        });
