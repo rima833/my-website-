@@ -26,7 +26,7 @@ body {
     text-decoration: none;
     color: #8B0000;
     position: absolute;
-    top: 15px;
+    top: 25px;
     left: 20px;
 }
 .logo span {
@@ -52,14 +52,14 @@ body {
 }
 
 .menu ul li {
-    margin: 0 15px;
+    margin: 20px 15px;
 }
 
 .menu ul li a {
     text-decoration: none;
     color: #0000cc;
     font-size: 18px;
-    padding: 10px;
+    padding: 5px;
     position: relative;
     transition: 0.3s;
     animation: pulseColorChange 2s infinite;
@@ -639,8 +639,9 @@ border-left: solid 5px #ff5733;
     }
 }
 
+/* Services Section */
 .container {
-    max-width: 800px;
+    max-width: 950px;
     margin: 20px auto;
     padding: 20px;
     background: white;
