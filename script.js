@@ -144,7 +144,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
         var typed = new Typed('.type', {
-            strings: ['HTML5', 'CSS', 'JavaScript', 'Python', 'WordPress,', 'And More'],
+            strings: ['HTML5', 'CSS', 'JavaScript', 'Python', 'React', 'WordPress', 'And More'],
             typeSpeed: 50,
             backSpeed: 50,
             loop: true
