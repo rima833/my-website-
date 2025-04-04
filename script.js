@@ -162,6 +162,15 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
 
+        let isScrolling;
+        window.addEventListener('scroll', () => {
+            menuToggle.style.display = 'block'; // Show the menu toggle when scrolling
+            clearTimeout(isScrolling);
+            isScrolling = setTimeout(() => {
+            menuToggle.style.display = 'none'; // Hide the menu toggle after scrolling stops
+            }, 2000); // Adjust the timeout duration as needed
+        });
+
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
             navLinks.forEach(nav => nav.classList.remove('active'));
